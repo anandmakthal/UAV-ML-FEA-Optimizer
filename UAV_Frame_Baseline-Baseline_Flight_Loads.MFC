@@ -1,0 +1,16 @@
+[StartTime]
+UAV_Frame_Baseline-Baseline_Flight_Loads.MFC=3s
+[SolverState]
+UAV_Frame_Baseline-Baseline_Flight_Loads.MFC=2
+[MainFrame]
+UAV_Frame_Baseline-Baseline_Flight_Loads.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMECAAAAAHEBAAAAAELDAAAAAKBCAAAAA
+[ShowMin]
+UAV_Frame_Baseline-Baseline_Flight_Loads.MFC=No
+[SolverType]
+UAV_Frame_Baseline-Baseline_Flight_Loads.MFC=Linear Analysis
+[StudyType]
+UAV_Frame_Baseline-Baseline_Flight_Loads.MFC=0
+[StudyName]
+UAV_Frame_Baseline-Baseline_Flight_Loads.MFC=Baseline_Flight_Loads
+[Solver]
+UAV_Frame_Baseline-Baseline_Flight_Loads.MFC=Sparse

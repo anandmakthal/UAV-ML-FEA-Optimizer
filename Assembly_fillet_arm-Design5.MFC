@@ -1,0 +1,16 @@
+[StartTime]
+Assembly_fillet_arm-Design5.MFC=2s
+[SolverState]
+Assembly_fillet_arm-Design5.MFC=2
+[MainFrame]
+Assembly_fillet_arm-Design5.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMECAAAAAHEBAAAAAELDAAAAAKBCAAAAA
+[ShowMin]
+Assembly_fillet_arm-Design5.MFC=No
+[SolverType]
+Assembly_fillet_arm-Design5.MFC=Linear Analysis
+[StudyType]
+Assembly_fillet_arm-Design5.MFC=0
+[StudyName]
+Assembly_fillet_arm-Design5.MFC=Design5
+[Solver]
+Assembly_fillet_arm-Design5.MFC=Sparse
