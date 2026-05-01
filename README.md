@@ -41,4 +41,4 @@ to automatically optimize UAV frame geometry.
 **Anand Makthal**
 MS Aerospace & Mechanical Engineering
 Saint Louis University | May 2026
-F-1 OPT Eligible | 3 Years US Work Authorization
+
