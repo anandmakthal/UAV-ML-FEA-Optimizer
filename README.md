@@ -1,44 +1,25 @@
+# ML-Driven Adaptive UAV Frame Optimizer
+### Integrating Real Flight Telemetry · SOLIDWORKS FEA · Neural Networks · Fluid Mechanics
 
-### ML-Driven UAV Frame Structural Optimizer
-**Anand Makthal | MS Aerospace & Mechanical Engineering | Saint Louis University | 2026**
-
----
+**Anand Makthal | MS Aerospace & Mechanical Engineering | Saint Louis University | May 2026**
 
 ## Project Summary
-A closed-loop system combining real UAV flight telemetry, 
-SOLIDWORKS FEA structural analysis, and a neural network 
-to automatically optimize UAV frame geometry.
 
-## Real Results
-| Design | Stress | FOS | Status |
-|--------|--------|-----|--------|
-| Baseline (3mm, 180mm) | 572.2 MPa | 0.48 | FAIL |
-| Optimized (6mm, 160mm, 35mm root) | 53.81 MPa | 5.11 |  PASS |
+A closed-loop machine learning system that combines real UAV flight telemetry, 
+SOLIDWORKS FEA, a Neural Network stress predictor, and a Random Forest 
+aerodynamic drag model to automatically optimize UAV quadcopter frame geometry.
 
-**90% stress reduction achieved through ML-guided optimization!**
 
-## Tools Used
-- SOLIDWORKS 2024 — CAD + FEA Simulation
-- Python — Data extraction + Neural Network
-- PX4 Flight Logs — Real UAV telemetry (50.91N loads)
-- PyTorch — Neural network (R²=0.9788, 97.88% accuracy)
+## Real SOLIDWORKS FEA Results
 
-## Neural Network Performance
-- Architecture: 4→64→32→1 feedforward network
-- Training: 1000 epochs, Adam optimizer
-- R² Score: 0.9788 (97.88% accuracy)
-- Dataset: 17 FEA runs (2 real SOLIDWORKS + 15 physics-based)
+| Design | Thickness | Length | Root Width | Fillet | Max Stress | FOS | Status |
+|--------|-----------|--------|------------|--------|------------|-----|--------|
+| Design 1 — Baseline | 3mm | 180mm | 20mm | 0mm | **572.2 MPa** | 0.48 |  FAIL |
+| Design 2 — Improved | 5mm | 180mm | 40mm | R20mm | **75.12 MPa** | 3.66 |  PASS |
+| Design 3 — Optimized | 6mm | 160mm | 50mm | R25mm | **54.46 MPa** | 5.05 |  PASS |
+| Design 4 — ML Validated  | 8.5mm | 200mm | 25mm | R10mm | **50.46 MPa** | 5.45 |  BEST |
 
-## Project Workflow
-1. Extract structural loads from real PX4 UAV telemetry
-2. Build UAV frame in SOLIDWORKS (CenterBody + 4 Arms)
-3. Run FEA with real flight loads (50.91N per motor)
-4. Train neural network on FEA dataset
-5. ML optimizer scans 1000+ designs in seconds
-6. Validate optimal design in SOLIDWORKS FEA
+> **91.2% stress reduction from baseline to ML-validated design!**
 
-## Author
-**Anand Makthal**
-MS Aerospace & Mechanical Engineering
-Saint Louis University | May 2026
 
+## Complete Closed-Loop Pipeline
